@@ -10,9 +10,10 @@ e-PlantShopping is an E-commerce applicatioin completed as a final project submi
 
 ## Functionality
 Using e-PlantShopping, you are able to: 
-    - Add Plants to Cart 
-    - Remove Plants From Cart
-    - View Total Cost
-    - View Plant Catalog by Category
-    - View Quantity In Cart while Browsing 
+
+    - [x] Add Plants to Cart 
+    - [x] Remove Plants From Cart
+    - [x] View Total Cost
+    - [x] View Plant Catalog by Category
+    - [x] View Quantity In Cart while Browsing 
 
