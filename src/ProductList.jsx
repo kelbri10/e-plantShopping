@@ -6,7 +6,7 @@ import { addItem } from './CartSlice';
 function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
-
+    const [isAdded, setIsAdded] = useState(false); 
     const [addedToCart, setAddedToCart] = useState({}); 
 
     const dispatch = useDispatch(); 
@@ -262,6 +262,8 @@ function ProductList({ onHomeClick }) {
         e.preventDefault();
         setShowCart(false);
     };
+
+    
     return (
         <div>
             <div className="navbar" style={styleObj}>
@@ -300,7 +302,7 @@ function ProductList({ onHomeClick }) {
                                                     <img src={plant.image} alt={plant.name} className="product-image"/>
                                                     <p className="plant-description">{plant.description}</p>
                                                     <p className="product-price">{plant.cost}</p>
-                                                    <button className="product-button" onClick={handleAddToCart}>Add To Cart</button>
+                                                    <button className="product-button" onClick={() => handleAddToCart(plant)}>Add To Cart</button>
                                                 </div>
                                             ))}
                                         
